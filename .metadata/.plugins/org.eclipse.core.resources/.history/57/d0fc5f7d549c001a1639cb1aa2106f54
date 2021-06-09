@@ -1,0 +1,34 @@
+package algorithams;
+
+public class Recursion {
+public static void main(String[] args) {
+countBack(6);
+System.out.println(factoriel(5));
+System.out.println(dec(5));
+}
+public static void countBack(int n) {
+	if(n==0) {
+		System.out.println("done");
+	}else {
+		System.out.println(n);
+		n--;
+		countBack(n);
+	}
+}
+	public static int factoriel(int n) {
+		if(n==1) {
+			return 1;
+		}else {
+			return n*factoriel(n-1);
+		}
+	}
+public static int dec ( int n) {
+	if(n==0) {
+		return 0;
+	}else {
+		n--;
+		return n;
+	}
+	
+}
+}

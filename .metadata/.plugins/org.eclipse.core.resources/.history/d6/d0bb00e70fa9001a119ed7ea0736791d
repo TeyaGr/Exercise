@@ -1,0 +1,8 @@
+package commons.Java;
+
+public class Levels {
+public static void main(String[] args) {
+	System.out.println(EnumYay.HIGH);
+}
+	
+}

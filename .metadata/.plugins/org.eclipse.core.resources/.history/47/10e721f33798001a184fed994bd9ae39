@@ -1,0 +1,30 @@
+import java.util.LinkedList;
+
+public class Linked {
+public static void main(String[] args) {
+	
+	LinkedList<Integer> li = new LinkedList<>();
+	li.addFirst(1);
+	li.addFirst(2);
+	li.addFirst(3);
+	System.out.println(li);
+	
+	LinkedList<Integer> il = new LinkedList<>();
+il.addLast(1);
+il.addLast(2);
+il.addLast(3);
+System.out.println(il);
+
+il.remove();
+System.out.println(il);
+
+LinkedList<Integer> lir = new LinkedList<>();
+for(Integer i : li) {
+	lir.addFirst(i);
+	System.out.println(lir);
+}
+
+lir.getFirst();
+}
+}
+

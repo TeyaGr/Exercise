@@ -1,0 +1,30 @@
+
+public class Methods {
+
+	public static void main(String[] args) {
+		welcome();
+		multiply(5,10);
+		multiply(5,100);
+		multiply(10,10);
+		multiply(15,10);
+		multiply(20,10);
+	divide(50,60);
+	divide(600,60);
+	System.out.println(sentence);
+	}
+	public static void welcome () {
+		System.out.println("Welcome to our calculator");
+	}
+	public static void multiply (int a , int b) {
+		System.out.println ( a*b);
+		
+	}
+	public static int divide ( int a , int b) {
+		System.out.println(a/b);
+		return a/b;
+		
+	}
+	public static String sentence ( ) {
+return "Kiss me baby one more time";
+}
+}

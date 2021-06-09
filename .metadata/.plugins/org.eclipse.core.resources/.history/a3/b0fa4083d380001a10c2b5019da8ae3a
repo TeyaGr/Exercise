@@ -1,0 +1,45 @@
+
+public class ConditionsAndLoops {
+
+	public static void main(String[] args) {
+		
+		int a = 10;
+		do {
+		System.out.println(a);
+			a--;
+			}
+			while(a<=5);	
+		
+		int b = 65; 
+	int c = 138; 
+	if (a>b && a>c) {
+		System.out.println( "The biggest number is " + a);
+		
+	}
+	else if (b>a && b>c){
+		System.out.println("The biggest number is :" + b);
+		
+		
+	}
+	else
+		System.out.println("The biggest number is" + c );
+	
+	if( c==8) {
+		
+		System.out.println ("c e togash 8");
+		
+}
+		
+	else {
+		System.out.println("c ne e 8");
+	}
+
+	
+}
+}		
+
+	
+	
+	
+		
+	

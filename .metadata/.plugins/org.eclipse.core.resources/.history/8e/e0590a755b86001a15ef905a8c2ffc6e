@@ -1,0 +1,8 @@
+
+public class Strings {
+public static void main(String[] args) {
+	
+	String Username = "MadPonnnyy888";
+	System.out.println("My____ sister is in my _____ room !!");
+}
+}

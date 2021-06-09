@@ -1,0 +1,30 @@
+package com.example.db;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class UpdateTable {
+
+	
+	private static String updateStatement = "UPDATE public.user" + 
+			"	SET, username=?=" +"	WHERE user_id=?;";
+	
+	
+	public void updateUser() {
+		try {
+					Connection con = JDBCConfig.getConnection();
+PreparedStatement ps = con.prepareStatement(updateStatement);
+ps.setString(1, "Luna");
+ps.setInt(2, 1);
+ps.executeUpdate();
+
+
+		} catch (Exception e) {
+e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		UpdateTable ut = new UpdateTable();
+		ut.updateUser();
+	}
+}

@@ -1,0 +1,11 @@
+package com.example.hibernateCRUD;
+
+import java.util.List;
+
+public interface EmployeeServices {
+
+	public List<Employee> getAllEmployees();
+	public Integer createEmployee(Employee employee);
+	public String updateEmployee(Integer empId, String empName);
+	public String deleteEmployeet(Integer empId);
+}

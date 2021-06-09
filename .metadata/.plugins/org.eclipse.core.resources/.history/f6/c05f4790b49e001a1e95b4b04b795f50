@@ -1,0 +1,8 @@
+package Adapter2;
+
+public class CAAdressValidator extends CAAddress implements AddressValidator{
+	@Override
+	public boolean isValidAddress(String address, String zip, String state) {
+		return isValidCanadianAddress(address, zip);
+	}
+}

@@ -1,0 +1,16 @@
+package com.example.DBPojo;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+       UsersDAO dao =new UsersDaoImplementation();
+      User user = dao.getUser(1);
+      System.out.println(user.getName());
+      System.out.println(user.getCountry);
+    }
+}

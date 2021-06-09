@@ -1,0 +1,30 @@
+package OOPconcepts;
+
+public class Dog extends Animals {
+private String name;
+static Cars car;
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public Dog(String name, Cars car) {
+	super();
+	this.name = name;
+	this.car= car;
+}
+void bark() {
+	System.out.println("Woof Woof");
+}
+public static void main(String[] args) {
+	
+	Dog luna = new Dog("Luna", car);
+	Cars car = new Cars();
+	luna.bark();
+	luna.eat();
+	System.out.println(luna.car);
+}
+}

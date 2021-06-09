@@ -1,0 +1,17 @@
+package Collections1;
+
+import java.util.ArrayList;
+
+public class ArrayListEx {
+public static void main(String[] args) {
+	
+	ArrayList<Integer> i = new ArrayList();
+	i.add(1);
+	i.add(5);
+	i.add(10);
+	System.out.println(i);
+	System.out.println(i.contains(5));
+	i.set(3, 23);
+	System.out.println(i);
+}
+}

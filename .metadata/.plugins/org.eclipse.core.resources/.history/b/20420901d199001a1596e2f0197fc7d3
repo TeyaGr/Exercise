@@ -1,0 +1,12 @@
+import java.util.HashSet;
+
+public class HashBownhies {
+public static void main(String[] args) {
+	
+	HashSet<String> h = new HashSet<>();
+	h.add("Orange");
+	h.add("Red");
+	h.add("Blue");
+	System.out.println(h);
+}
+}

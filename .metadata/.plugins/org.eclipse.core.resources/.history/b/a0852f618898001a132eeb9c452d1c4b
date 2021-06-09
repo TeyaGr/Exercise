@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.Stack;
+
+public class PallindromeYay {
+public static void main(String[] args) {
+	String s = "aleli";
+	String[] array = s.split(" ");
+	Stack<String> help = new Stack<>();
+	ArrayList<String>one = new ArrayList<>();
+	String two ="";
+	for(String string:array) {
+		one.add(string);
+		help.push(string);
+        two+=help.pop();
+	}
+System.out.println(one);
+System.out.println(two);
+}
+}

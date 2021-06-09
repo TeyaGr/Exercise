@@ -1,0 +1,32 @@
+package com.example.restBasics.services;
+
+import java.util.List;
+
+import javax.jws.WebService;
+
+import com.example.restBasics.entity.Product;
+
+
+
+@WebService(endpointInterface="com.example.services.ProductService")
+public class ProductServiceImpl implements ProductService {
+
+	@Override
+	public String insertProduct(Product product) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Product findProductById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> findAllProducts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

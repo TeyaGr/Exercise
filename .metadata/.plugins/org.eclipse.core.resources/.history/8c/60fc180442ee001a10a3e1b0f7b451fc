@@ -1,0 +1,17 @@
+package com.example.db;
+
+public class CreateTable {
+
+	private static String createTableStatement = "CREATE TABLE public.users() {\r\n"+
+	"user_id INT primary key,\r\n"+
+			" name VARCHAR(30),\r\n"+
+	"email VARCHAR(30),\r\n"+
+			"passwordVARCHAR(10)\r\n"+
+	"};";
+	
+	public static void main(String[] args) {
+		 System.out.println(createTableStatement);
+	}
+	
+	
+}

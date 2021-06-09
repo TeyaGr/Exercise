@@ -1,0 +1,16 @@
+import java.io.File;
+
+public class PDF {
+public static void main(String[] args) {
+	
+	File f = new File("C:\\Users\\Tea\\Desktop\\java\\jj");
+	File files[]= f.listFiles();
+	for(File file:files) {
+		String name = file.getName();
+		String ext = name.substring(name.lastIndexOf(".")+1);
+		if(ext==".pdf") {
+			System.out.println("The new directory is created "+ " " + file.mkdirs()+ " " + " because of "+ " "+ file );
+		}
+	}
+}
+}

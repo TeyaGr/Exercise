@@ -1,0 +1,7 @@
+127.0.0.1 - - [28/Sep/2020:13:49:44 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [28/Sep/2020:13:49:46 +0200] "GET /userRest/WEB-INF/classes/main/java/user/App.java HTTP/1.1" 404 682
+127.0.0.1 - - [28/Sep/2020:13:50:37 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [28/Sep/2020:13:50:38 +0200] "GET /userRest/WEB-INF/classes/main/java/user/App.java HTTP/1.1" 404 682
+192.168.0.106 - - [28/Sep/2020:14:34:05 +0200] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [28/Sep/2020:18:07:35 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [28/Sep/2020:18:07:38 +0200] "GET /userRest/WEB-INF/classes/main/java/src/App.java HTTP/1.1" 404 682

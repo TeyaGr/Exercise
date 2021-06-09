@@ -1,0 +1,20 @@
+package algorithams;
+
+public class Recursion {
+public static void main(String[] args) {
+
+sayHi(5);
+}
+		public static void sayHi(int n) {
+			System.out.println("Hi");
+			if(n==0) {
+				System.out.println("Stop");
+			}
+			else {
+				sayHi(n);
+				n--;
+			}
+		}
+	
+
+}

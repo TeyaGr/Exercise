@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping SYSTEM "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd" >
+
+-<hibernate-mapping>
+
+
+-<class table="employeeNew" name="com.example.hibernateEx.Employee">
+
+
+-<id name="id">
+
+<generator class="assigned"/>
+
+</id>
+
+<property name="deptName" type="string" column="dept_name"/>
+
+<property name="projectName" type="string" column="project_name"/>
+
+<property name="noOfEmployees" type="int" column="no_employees"/>
+
+</class>
+
+</hibernate-mapping>

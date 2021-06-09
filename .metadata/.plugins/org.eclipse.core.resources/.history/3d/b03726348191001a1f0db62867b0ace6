@@ -1,0 +1,14 @@
+
+public class MethodString {
+public static void main(String[] args) {
+	
+	String str = "Hello I am a string";
+	System.out.println(getLenght(str));
+}
+	
+	
+	
+	public static int getLenght(String s) {
+		return s.length();
+	}
+}

@@ -1,0 +1,14 @@
+import java.util.HashMap;
+
+public class HashMapTest {
+public static void main(String[] args) {
+	
+	HashMap <String,Integer> test = new HashMap <>();
+	test.put("Tea", 1);
+	test.put("Tea2", 2);
+	test.put("Tea3", 3);
+	test.put("Tea4", 4);
+	
+	System.out.println(test.get(1));
+			}
+}

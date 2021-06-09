@@ -1,0 +1,33 @@
+package com.example.db;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class InsertData {
+
+	private static String insertStatement="INSERT INTO public.users(\r\n" + 
+			"	user_id, name, email, country, password)\r\n" + 
+			"	VALUES (?, ?, ?, ?, ?);";
+	public void insertRecord() {
+		
+		
+		try {
+			Connection connection = JDBCConfig.getConnection();
+			PreparedStatement pStatement = connection.prepareStatement(insertStatement);
+			pStatement.setInt(1,2);
+			pStatement.setString(2,"Bube");
+			pStatement.setString(3,"tbgrombanovska@yahoo.com");
+			pStatement.setString(4,"MK");
+			pStatement.setString(5,"55665");
+			pStatement.executeUpdate();
+		}catch(Exception e ) {
+			System.out.println(e);
+	}
+		
+	}
+	public static void main(String[] args) {
+		System.out.println(insertStatement);
+		InsertData insertData = new InsertData();
+		insertData.insertRecord();
+	}
+}

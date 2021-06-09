@@ -1,0 +1,14 @@
+127.0.0.1 - - [30/Sep/2020:21:34:15 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:21:34:21 +0200] "GET /restExample/WEB-INF/classes/main/java/app/PersonService.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:21:47:33 +0200] "GET /restExample/rest/person/getAll HTTP/1.1" 200 1133
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:07:06 +0200] "POST /restExample/rest/person/create HTTP/1.1" 200 41
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:07:41 +0200] "POST /restExample/rest/person/create HTTP/1.1" 200 41
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:07:54 +0200] "GET /restExample/rest/person/getAll HTTP/1.1" 200 4533
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:08:44 +0200] "POST /restExample/rest/person/create HTTP/1.1" 200 41
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:09:45 +0200] "POST /restExample/rest/person/create HTTP/1.1" 200 41
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:09:58 +0200] "GET /restExample/rest/person/getAll HTTP/1.1" 200 7930
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:11:12 +0200] "GET /restExample/WEB-INF/classes/main/java/app/PersonService.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:11:28 +0200] "GET /restExample/rest/person/getAll HTTP/1.1" 200 9011
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:11:38 +0200] "GET /restExample/rest/person/getAll HTTP/1.1" 200 10072
+0:0:0:0:0:0:0:1 - - [30/Sep/2020:22:13:57 +0200] "GET /restExample/rest/person/5 HTTP/1.1" 200 160
+127.0.0.1 - - [30/Sep/2020:22:55:31 +0200] "GET /restExample/rest/person/getAll HTTP/1.1" 200 12194

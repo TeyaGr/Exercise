@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class IfElse {
+public static void main(String[] args) {
+	
+	Scanner grade = new Scanner (System.in);
+	int a= grade.nextInt();
+	System.out.println("What is your score? /n" + a);
+	
+	
+}
+}

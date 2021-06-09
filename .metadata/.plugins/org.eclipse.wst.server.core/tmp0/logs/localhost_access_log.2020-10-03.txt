@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [03/Oct/2020:01:00:33 +0200] "GET /customer/rest/buy/init HTTP/1.1" 200 4
+127.0.0.1 - - [03/Oct/2020:01:04:21 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Oct/2020:01:04:22 +0200] "GET /customer/WEB-INF/classes/main/java/customer/entity/ShoppingCart.java HTTP/1.1" 404 682
+127.0.0.1 - - [03/Oct/2020:16:31:46 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Oct/2020:16:31:47 +0200] "GET /customer/WEB-INF/classes/main/java/customer/services/ProductService.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [03/Oct/2020:16:47:04 +0200] "POST /customer/rest/customer/create HTTP/1.1" 500 3904
+192.168.0.107 - - [03/Oct/2020:17:22:31 +0200] "GET / HTTP/1.1" 404 751

@@ -1,0 +1,5 @@
+package main.java.user.entity;
+
+public @interface Table {
+
+}

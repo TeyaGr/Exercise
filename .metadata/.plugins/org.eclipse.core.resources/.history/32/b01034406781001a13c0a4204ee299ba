@@ -1,0 +1,25 @@
+
+public class ForAndArrayMatrix {
+
+	public static void main(String[] args) {
+		
+		int arr[]= {3,4,5,6,7,8,55};
+		
+		for(int i:arr) {
+			System.out.println(i);
+		}
+		
+		for (int a = 0; a<arr.length; a++) {
+			if (arr[a]%2==0) {
+				System.out.println(arr[a]);
+				
+			}
+		}
+		
+		for (int a = 0; a<arr.length; a++) {
+			if(a>arr[a]) {
+				System.out.println(arr[a]);
+			}
+		}
+	}
+}

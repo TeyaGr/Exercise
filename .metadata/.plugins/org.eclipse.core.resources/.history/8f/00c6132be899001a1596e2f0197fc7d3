@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class First {
+public static void main(String[] args) {
+	
+	ArrayList <String> list= new ArrayList<>();
+	String s = "Hello dear students. My name is Code Academy";
+	String[] st = s.split("");
+	for(String string:st) {
+		System.out.println(string);
+	}
+}
+}

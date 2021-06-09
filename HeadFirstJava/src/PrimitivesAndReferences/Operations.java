@@ -1,0 +1,17 @@
+package PrimitivesAndReferences;
+
+public class Operations {
+
+	public static void main(String[] args) {
+		addNumbers(1,2);
+		System.out.println(divNumbers(10,2));
+	}
+	public static void addNumbers( int a, int b ) {
+		int c = a+b;
+		System.out.println(c);
+	}
+	public static int divNumbers(int a, int b) {
+		int c = a/b;
+		return c;
+	}
+}

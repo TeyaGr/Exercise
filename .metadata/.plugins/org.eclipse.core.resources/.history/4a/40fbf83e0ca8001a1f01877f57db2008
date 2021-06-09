@@ -1,0 +1,5 @@
+package OOPconcepts;
+
+public interface HumanInterface {
+
+}

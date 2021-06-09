@@ -1,0 +1,64 @@
+package com.example.db;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class SelectData {
+
+	
+	private static String selectAllStatement="SELECT *\r\n" + 
+			"	FROM public.\"user\";";
+	private static String selectById="SELECT *\r\n" + 
+			"	FROM public. WHERE user_id=?";
+	
+	public static void selectId() {
+		try {
+			Connection connection = JDBCConfig.getConnection();
+			PreparedStatement pS = connection.prepareStatement(selectById);
+			pS.setInt(1, 1);
+			ResultSet rs = pS.executeQuery();
+			
+			
+			while (rs.next()) {
+				int user_id=rs.getInt(1);
+				String username=rs.getString(2);
+				String email = rs.getString(3);
+				String country = rs.getString(4);
+				String password= rs.getString(5);
+				System.out.println(user_id+username+email+country+password);
+		} 
+		}
+			catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+public static void selectData() {
+
+	try {
+		Connection connection = JDBCConfig.getConnection();
+		PreparedStatement pS = connection.prepareStatement(selectAllStatement);
+		Statement s= connection.createStatement();
+		s.execute(selectAllStatement);
+		ResultSet rs = pS.executeQuery();
+		
+		
+		while (rs.next()) {
+			int user_id=rs.getInt(1);
+			String username=rs.getString(2);
+			String email = rs.getString(3);
+			String country = rs.getString(4);
+			String password= rs.getString(5);
+			System.out.println(user_id+username+email+country+password);
+		}
+	} catch(Exception e) {
+		e.printStackTrace();
+	}
+}
+public static void main(String[] args) {
+	SelectData sd = new SelectData();
+    sd.selectData();
+
+}
+}

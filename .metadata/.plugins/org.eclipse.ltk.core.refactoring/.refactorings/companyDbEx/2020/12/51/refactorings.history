@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;dNumber&apos; in &apos;com.example.companyDbEx.entity.Project.setdNumber(...)&apos; to &apos;dNum&apos;&#x0D;&#x0A;- Original project: &apos;companyDbEx&apos;&#x0D;&#x0A;- Original element: &apos;com.example.companyDbEx.entity.Project.setdNumber(Department).dNumber&apos;&#x0D;&#x0A;- Renamed element: &apos;dNumber&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;dNumber&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.companyDbEx.entity{Project.java[Project~setdNumber~QDepartment;@dNumber!872!889!883!889!QDepartment;!0!true" name="dNum" references="true" stamp="1608170006419" version="1.0"/>
+</session>

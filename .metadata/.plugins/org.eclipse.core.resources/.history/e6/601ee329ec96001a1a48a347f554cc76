@@ -1,0 +1,11 @@
+import java.util.*;
+public class GenericReturnType {
+
+	
+	public static <T extends comparable<T>> T max ( T a, T b, T c ) {
+		T max = a;
+		if ( b.compareTo(a)>0) {
+			max = b;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+package main.java.app;
+import org.apache.http.client.HttpClient;
+public class restClient {
+public static void main(String[] args) {
+	
+	try {
+		HttpClient 
+	} catch (Exception e) {
+		// TODO: handle exception
+	} {
+		
+	}
+}
+}

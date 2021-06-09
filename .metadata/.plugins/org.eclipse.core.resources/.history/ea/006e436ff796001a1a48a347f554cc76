@@ -1,0 +1,29 @@
+package Collections1;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class ArrayLlistExercises {
+
+	public static void main(String[] args) {
+		reverseElement();
+		sort();
+	}
+	static void reverseElement() {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("red");
+		list.add("blue");
+		list.add("green");
+		System.out.println(list);
+		Collections.reverse(list);
+		System.out.println(list);
+	}
+	static void sort() {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add("red");
+		list.add("blue");
+		list.add("green");
+		Collections.sort(list);
+		System.out.println(list);
+	}
+}

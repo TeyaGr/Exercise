@@ -1,0 +1,17 @@
+package com.example.university;
+
+import java.io.Serializable;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Embeddable;
+import javax.persistence.ManyToOne;
+
+@Embeddable
+public class AttendsID implements Serializable{
+	
+	@ManyToOne(cascade = CascadeType.ALL)
+	private Student studentId;
+	@ManyToOne(cascade = CascadeType.ALL)
+	private Courses courseId;
+
+}

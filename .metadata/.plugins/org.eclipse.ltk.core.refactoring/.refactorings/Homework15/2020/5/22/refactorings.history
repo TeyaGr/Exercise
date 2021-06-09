@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;adp.CroceryItem&apos; to &apos;GroceryItem&apos;&#x0D;&#x0A;- Original project: &apos;Homework15&apos;&#x0D;&#x0A;- Original element: &apos;adp.CroceryItem&apos;&#x0D;&#x0A;- Renamed element: &apos;adp.GroceryItem&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CroceryItem&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;adp{CroceryItem.java[CroceryItem" matchStrategy="1" name="GroceryItem" qualified="false" references="true" similarDeclarations="false" stamp="1590441906200" textual="false" version="1.0"/>
+</session>

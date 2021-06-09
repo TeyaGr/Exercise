@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class QGame {
+public static void main(String[] args) {
+	
+	Queue<String> First = new LinkedList<>();
+	Queue<String> Second = new LinkedList<>();
+	int TotalRed1=0;
+	int TotalRed2=0;
+	String[] array = { "R1", "R1", "R1", "R1" };// "R1", "R1", "R1", "T1" };
+	for(String string:array) {
+		if(string.equals("R1")) {
+			TotalRed1++;
+			
+		}
+			System.out.println(("TotalRed1 :"+" "+ TotalRed1));	
+	}
+}
+}

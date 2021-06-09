@@ -1,0 +1,22 @@
+package PrimitivesAndReferences;
+
+import java.awt.print.Book;
+
+public class ObjectsAndArrays {
+public static void main(String[] args) {
+	
+
+	
+Book b = new Book();
+Book c = new Book();
+Book d = c;
+readBook(b, d, d);
+
+}
+
+	public static  void readBook(Book d , Book b, Book c) {
+		
+		System.out.println("I have been read");
+	
+}
+}

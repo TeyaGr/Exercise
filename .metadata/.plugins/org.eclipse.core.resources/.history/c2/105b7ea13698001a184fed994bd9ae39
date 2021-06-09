@@ -1,0 +1,12 @@
+import java.util.LinkedList;
+
+public class Linked {
+public static void main(String[] args) {
+	
+	LinkedList<Integer> li = new LinkedList<>();
+	li.addFirst(1);
+	li.addFirst(2);
+	li.addFirst(3);
+	System.out.println(li);
+}
+}

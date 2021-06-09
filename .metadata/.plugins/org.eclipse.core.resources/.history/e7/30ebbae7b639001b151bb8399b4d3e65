@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping SYSTEM "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd" >
+
+-<hibernate-mapping>
+
+
+-<class table="employeeNew" name="com.example.hibernateEx.Employee">
+
+
+-<id name="id">
+
+<generator class="assigned"/>
+
+</id>
+
+<property name="firstName" type="string" column="first_name"/>
+
+<property name="lastName" type="string" column="last_name"/>
+
+<property name="salary" type="int" column="salary"/>
+
+<property name="date" type="date" column="date"/>
+
+</class>
+
+</hibernate-mapping>

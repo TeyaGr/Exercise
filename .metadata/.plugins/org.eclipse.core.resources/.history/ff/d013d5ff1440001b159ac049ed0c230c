@@ -1,0 +1,59 @@
+package com.example.company;
+
+import java.util.Date;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.example.company.entity.Department;
+import com.example.company.entity.Employee;
+
+public class App 
+{
+	
+	static SessionFactory factory;
+    public static void main( String[] args )
+    {
+    	Transaction tx = null;
+		try {
+			Configuration cfg = new Configuration();
+			cfg.addAnnotatedClass(com.example.company.entity.Department.class);
+			cfg.addAnnotatedClass(com.example.company.entity.DependentId.class);
+			cfg.addAnnotatedClass(com.example.company.entity.Employee.class);
+			cfg.addAnnotatedClass(com.example.company.entity.Project.class);
+			cfg.addAnnotatedClass(com.example.company.entity.WorksOn.class);
+			cfg.addAnnotatedClass(com.example.company.entity.WorksOnId.class);
+			cfg.addAnnotatedClass(com.example.company.entity.DeptLocationsID.class);
+			cfg.addAnnotatedClass(com.example.company.entity.DeptLocations.class);
+			cfg.addAnnotatedClass(com.example.company.entity.Dependent.class);
+			cfg.configure();
+			factory = cfg.configure().buildSessionFactory();
+			Session session = factory.openSession();
+			tx = session.beginTransaction();
+			
+			
+			//Creata employee and department
+    	
+			Date date = new Date(System.currentTimeMillis());
+			
+			
+			Employee emp = new Employee("Dimitar", "Josifov", "V", date , "Skopje", "M", 1234567);
+			
+			Department dep = new Department("Dept1", emp, date);
+			
+			emp.setDno(dep);
+			emp.setSuperSSN(emp);
+			
+			session.persist(emp);
+			session.persist(dep);
+			
+			tx.commit();
+			session.close();
+    	
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+    }
+}

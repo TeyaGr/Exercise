@@ -1,0 +1,40 @@
+package com.example.hibernateCRUD;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.Metadata;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
+import com.example.hibernateCRUD.Employee;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );	
+        //1. Otvarame standard service registry
+StandardServiceRegistry ssr = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
+//2 otvarame metadata
+Metadata md = new MetadataSources(ssr).getMetadataBuilder().build();
+//3. Otvarame session factory
+SessionFactory factory = md.getSessionFactoryBuilder().build();
+//4. Otvarame sesija
+Session session = factory.openSession();
+//5 otvarame transakcija
+Transaction t = session.beginTransaction();
+
+session.close();
+factory.close();
+//i sega pravime objekt od klasata/tabelata
+    }
+
+
+
+}

@@ -1,0 +1,5 @@
+package com.example.restBasics.entity;
+
+public class Product {
+
+}

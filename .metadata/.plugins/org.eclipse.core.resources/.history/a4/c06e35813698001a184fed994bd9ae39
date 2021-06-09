@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class ArrayOne {
+public static void main(String[] args) {
+	
+	ArrayList<Integer> even = new ArrayList<>();
+	even.add(1);
+	even.add(5);
+	even.add(6);
+	even.add(12);
+	even.add(33);
+	
+	for ( int i = 0; i<even.size();i++) {		
+	
+			
+			
+		
+	}
+}
+}

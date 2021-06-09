@@ -1,0 +1,11 @@
+package Library;
+
+import java.util.HashMap;
+
+public class AppMain {
+public static void main(String[] args) {
+	
+	
+	HashMap<String,String> studentCredentials = getAllStudentsCredentials();
+}
+}

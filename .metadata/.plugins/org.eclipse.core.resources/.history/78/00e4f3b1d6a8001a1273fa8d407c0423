@@ -1,0 +1,8 @@
+package OOPconcepts;
+
+public interface PersonInf {
+
+	public  void PersonInfo(){
+		
+	}
+}

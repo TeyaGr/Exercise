@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class ArrayOne {
+public static void main(String[] args) {
+	
+	ArrayList<Integer> evenPos = new ArrayList<>();
+	evenPos.add(1);
+	evenPos.add(5);
+	evenPos.add(6);
+	evenPos.add(12);
+	evenPos.add(33);
+	
+	for ( int i = 0; i<evenPos.size();i++) {		
+	if(i%2==0){
+		System.out.println(evenPos.get(i));
+	}
+			
+			
+		
+	}
+}
+}

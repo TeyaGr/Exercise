@@ -1,0 +1,36 @@
+package FileExercises;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class HashMap11 {
+public static void main(String[] args) {
+	
+	HashMap<String,String> up = new HashMap<>();
+	up.put("Teai5ka", "5641");
+	up.put("Teai5", "564");
+	up.put("Tea", "233889");
+	up.put("TMakalo", "Makarska");
+	up.put("LetiBudva", "ZimiKop");
+	Scanner s = new Scanner(System.in);
+	System.out.println("How many usernames would yoi like to choose??");
+	int a= s.nextInt();
+	for ( int i=0;i<a;i++) {
+		System.out.println("Vnesete go vashiot username:");
+		String user = s.nextLine();
+		if(!up.containsKey(user)) {
+			System.out.println("That username does not exist");
+			
+		}else {
+			System.out.println("Vnesete go vashiot password");
+			String pass = s.nextLine();
+			
+			if(!up.containsValue(pass)) {
+				System.out.println("The password is not correct");
+			}else {
+			System.out.println("Uspeshn se najavivte");
+		}
+	}
+}
+}
+}

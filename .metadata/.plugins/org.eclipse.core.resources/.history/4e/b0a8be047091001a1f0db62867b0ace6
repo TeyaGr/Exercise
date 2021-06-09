@@ -1,0 +1,12 @@
+
+public class Static {
+int a = 5;
+public static void main(String[] args) {
+	
+	int b = 10;
+	//System.out.println(a+b);//  dava greshka, nemozhe da kompajlira promenliva shto ne e static
+	
+	Static s = new Static(); // mora da se sozdade objekt Static za da se dojde do a
+	System.out.println(s.a + b);
+}
+}

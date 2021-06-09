@@ -1,0 +1,9 @@
+package commons.Java;
+
+public enum EnumYay {
+
+	LOW,
+	MEDIUM,
+	HIGH;
+	
+}

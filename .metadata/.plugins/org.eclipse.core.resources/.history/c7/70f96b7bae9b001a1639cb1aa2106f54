@@ -1,0 +1,11 @@
+package algorithams;
+
+public class Recursion {
+public static void main(String[] args) {
+	}
+printHI();
+	public static void printHI (){
+		System.out.println("HI");
+	
+}
+}

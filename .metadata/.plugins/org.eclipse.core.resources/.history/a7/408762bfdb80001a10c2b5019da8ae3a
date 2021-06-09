@@ -1,0 +1,16 @@
+
+public class Arrays {
+public static void main(String[] args) {
+	
+	String[] wordList1 = {"paper" , "snow", "aghost", "luna", "doggo"};
+	String[] wordList2 = {"bravo", "da", "ne", "terasa", "klucevi", "pinkpong"};
+	String[] wordList3  = {"lotr", "mi", "e", "omilena", "triloija", "wohoo"};
+	int onelenght = wordList1.length;
+	int twoLenght = wordList2.length;
+	int three = wordList3.length;
+	System.out.println(onelenght);
+	System.out.println(twoLenght);
+	System.out.println(three);
+	
+}
+}

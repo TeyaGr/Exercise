@@ -1,0 +1,19 @@
+
+public class MinFunc {
+
+	
+	public static int minFunction ( int a, int b) {
+		int min;
+		if (a>b) {
+			min = a;
+		}else {
+			min = b;
+		}
+		System.out.println(min);
+		return min;
+	}
+	public static void main(String[] args) {
+		
+		minFunction(2,5);
+	}
+}

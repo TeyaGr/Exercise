@@ -1,0 +1,26 @@
+package OOPconcepts;
+
+
+
+public class ElementsTest {
+public static void main(String[] args) {
+	
+	public static void main(String[] args) {
+		String value = "Oxygen";
+		
+		boolean contains = false;
+		
+		for (Element1 e:Element1.values()) {
+			
+			System.out.println(e.name());
+			System.out.println(e.getImeElement());
+			
+			if(e.getImeElement()==value) {
+				contains=true;
+				break;
+			}
+		}
+		
+		System.out.println(contains);
+	}
+}

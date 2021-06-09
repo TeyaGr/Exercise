@@ -1,0 +1,10 @@
+
+public class OOP {
+
+	int x=10;
+	public static void main(String[] args) {
+		
+		OOP op = new OOP();
+		System.out.println(op.x);
+	}
+}

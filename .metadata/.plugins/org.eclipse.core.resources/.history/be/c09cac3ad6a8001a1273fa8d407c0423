@@ -1,0 +1,16 @@
+
+public enum Elements {
+H("Hydrogen"),
+O("Oxygen"),
+HE("Helium"),
+Ne("Neon");
+	
+	private final String name;
+	
+private Elements(String name) {
+		this.name = name;
+	}
+public String getName() {
+	return name;
+}
+}

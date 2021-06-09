@@ -1,0 +1,10 @@
+package commons.Java;
+
+public class Wrappers {
+public static void main(String[] args) {
+	
+	Integer myInt = 5;
+	System.out.println(myInt);
+	System.out.println(myInt.intValue());
+}
+}

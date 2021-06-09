@@ -1,0 +1,13 @@
+127.0.0.1 - - [06/Oct/2020:14:35:00 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:14:35:13 +0200] "GET /customer/WEB-INF/classes/main/java/customer/services/ShoppingCartService.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:14:36:47 +0200] "POST /customer/rest/customer/create HTTP/1.1" 500 3904
+127.0.0.1 - - [06/Oct/2020:18:48:50 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:18:48:52 +0200] "GET /customer/WEB-INF/classes/main/java/customer/entity/Category.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:18:52:00 +0200] "GET /customer/rest/buy/init HTTP/1.1" 500 5481
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:18:52:38 +0200] "GET /customer/WEB-INF/classes/main/java/customer/controller/ShoppingCartController.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:18:52:55 +0200] "GET /customer/rest/buy/init HTTP/1.1" 500 5481
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:18:54:08 +0200] "GET /customer/WEB-INF/classes/main/java/customer/controller/ShoppingCartController.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:18:54:16 +0200] "GET /customer/rest/buy/init HTTP/1.1" 500 5481
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:18:54:52 +0200] "GET /customer/rest/buy/init HTTP/1.1" 500 5481
+127.0.0.1 - - [06/Oct/2020:19:17:08 +0200] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [06/Oct/2020:19:17:08 +0200] "GET /customer/WEB-INF/classes/main/java/customer/services/ProductService.java HTTP/1.1" 404 682

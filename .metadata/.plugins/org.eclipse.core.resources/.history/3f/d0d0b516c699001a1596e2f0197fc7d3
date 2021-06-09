@@ -1,0 +1,13 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BarbeQueue {
+public static void main(String[] args) {
+	
+	Queue <String> bbqLine = new LinkedList<>();
+	bbqLine.add("Jackson");
+	bbqLine.add("Tyrique");
+	bbqLine.add("Susan");
+	System.out.println(bbqLine);
+}
+}

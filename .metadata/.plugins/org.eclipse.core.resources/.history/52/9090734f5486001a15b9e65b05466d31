@@ -1,0 +1,16 @@
+
+public class Proizvod {
+
+public static int MultiplyNumber(int n) {
+		if (n == 0) {
+			return 0;
+		} else {
+			System.out.print(n%10  + " ");
+			return n%10 * MultiplyNumber(n/10);
+		}
+}
+public static void main(String[] args) {
+	int i = 123;
+	System.out.println(MultiplyNumber(i));
+}
+}

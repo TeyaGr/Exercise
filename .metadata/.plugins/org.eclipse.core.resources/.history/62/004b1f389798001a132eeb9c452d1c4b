@@ -1,0 +1,8 @@
+
+public class TryCatchyyy {
+public static void main(String[] args) {
+	
+	int[] i= {1,2,3};
+	System.out.println(i[3]);
+}
+}

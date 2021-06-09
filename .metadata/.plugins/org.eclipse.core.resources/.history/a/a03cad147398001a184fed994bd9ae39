@@ -1,0 +1,33 @@
+import java.util.Stack;
+
+public class CorrectBrackets {
+public static void main(String[] args) {
+	
+	String s = "()";
+	String[] array = s.split(" ");
+	Stack <String> st = new Stack<>();
+	boolean flag = false;
+	for(String string:array) {
+		if(string=="(") {
+			st.push(string);
+			st.pop();
+		}else if( string==")") {
+			if(st.isEmpty()) {
+				flag=false;
+				
+			}
+			else {
+				st.pop();
+				flag=true;
+				
+			}
+		
+		}
+			
+	}
+	if(!st.isEmpty()) {
+		flag=false;
+	}
+	System.out.println(flag);
+	}
+}
